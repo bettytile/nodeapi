@@ -1,0 +1,25 @@
+<h3>{{viewTitle}}</h3>
+<form action="/user" method="POST">
+<input type="hidden" name="_id" value="{{user._id}}">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" value="{{user.firstName}}" name="firstName" placeholder="First name"/>
+    </div>
+    <div class="form-group">
+        <label >last Name</label>
+        <input type="text" class="form-control" value="{{user.lastName}}" name="lastName" placeholder="Last name"/>
+    </div>
+    <div class="form-group">
+        <label >Email</label>
+        <input type="text" class="form-control" value="{{user.email}}" name="email" placeholder="Email"/>
+    </div>
+    <div class="form-group">
+        <label >Phone No</label>
+        <input type="text" class="form-control" value="{{user.phone}}" name="phone" placeholder="Phone No"/>
+    </div>
+    <div class="form-group">
+        
+        <input type="submit" class="btn btn-info" name="submit" title="Register">
+        <a class="btn btn-secondary" href="/user/list"><i class="fa fa-list-alt"></i> View All Users</a>
+    </div>
+</form>
